@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 23, 2020 12:03:01 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="student.StudentRecord" table="STUDENTRECORD">
+        <id name="rollno" type="int">
+            <column name="ROLLNO" />
+            <generator class="increment" />
+        </id>
+        <property name="name" type="java.lang.String">
+            <column name="NAME" />
+        </property>
+        <property name="email" type="java.lang.String">
+            <column name="EMAIL" />
+        </property>
+        <property name="grade" type="java.lang.String">
+            <column name="GRADE" />
+        </property>
+        <property name="phy" type="int">
+            <column name="PHY" />
+        </property>
+        <property name="chem" type="int">
+            <column name="CHEM" />
+        </property>
+        <property name="maths" type="int">
+            <column name="MATHS" />
+        </property>
+        <property name="total" type="int">
+            <column name="TOTAL" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<script type="text/javascript">
+function my_total()
+{
+	var x=document.getElementById("phy").value;
+	var y=document.getElementById("chem").value;
+	var z=document.getElementById("maths").value;
+	var result=x+y+z;
+	document.getElementById("total").value=result;
+}
+</script>
+<title>STUDENT DAO</title>
+</head>
+
+<body>
+<h2 align="center">SAVE DETAILS</h2>
+
+<form action="save.jsp" method="post">
+<table align="center">
+<tr>
+<td>Name:</td>
+<td><input type="text" name="name"></td>
+</tr>
+<tr>
+<td>Email:</td>
+<td><input type="email" name="email"></td>
+</tr>
+<tr>
+<td>Physics:</td>
+<td><input type="text" name="phy"></td>
+</tr>
+<tr>
+<td>Chemistry:</td>
+<td><input type="text" name="chem"></td>
+</tr>
+<tr>
+<td>Maths:</td>
+<td><input type="text" name="maths"></td>
+</tr>
+<tr>
+<td>Total Marks:</td>
+<td><input type="text" name="total"></td>
+<td><input type="button" value="GET" onClick="my_total()"></td>
+</tr>
+<tr>
+<td>Grade:</td>
+<td><input type="text" name="grade"></td>
+</tr><br>
+<tr><td colspan="2" align="center"><input type="submit" value="Save"></td></tr>
+</table>
+</form>
+<hr>
+<h2 align="center">SEARCH RECORD</h2>
+<form action="get.jsp" method="post">
+<table align="center">
+<tr>
+<td>Enter RollNo:</td>
+<td><input type="text" name="rollno"></td>
+</tr><br>
+<tr><td colspan="2" align="center"><input type="submit" value="Get Record"></td></tr>
+</table>
+</form>
+</body>
+</html>
+
